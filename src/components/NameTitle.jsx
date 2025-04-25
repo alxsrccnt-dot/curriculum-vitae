@@ -1,7 +1,8 @@
-function DisplayName(name)
+import { FullName } from "../constants/texts.js";
+
+function DisplayName()
 {
-    var name = 'Serediuc Constantin-Alexandru';
-    return <h1>{name}</h1>;
+    return <h1>{FullName}</h1>;
 }
 
 export default DisplayName;

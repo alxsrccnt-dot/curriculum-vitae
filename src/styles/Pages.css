@@ -1,0 +1,86 @@
+.two-columns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left-column {
+    padding: 2%;
+    max-width: 50%;
+}
+
+.right-column {
+    max-width: 50%;
+}
+
+.profile-photo{
+    width: 100%;
+    height: auto;
+}
+
+.profile-img{
+    width: 100%;
+}
+
+.my-services-block > h1{
+    font-size: var(--title-font-size);
+    margin-bottom: 3%;
+}
+
+.my-services{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+}
+
+.short-description > p{
+    color: var(--primary-color);
+    padding: 0 1%;
+}
+
+.one-service{
+    width: 47%;
+    margin: 0% 1% 1% 0%;
+}
+
+.one-service > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+.one-service > h1 {
+    font-weight: bold;
+    font-size: var(--title-font-size);
+}
+
+.my-services-icon{
+    font-size: var(--title-font-size);
+    margin-right: 3%;
+    color: var(--primary-color);
+}
+
+.short-description{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.about-me-content{
+    border-bottom: 1px solid var(--gray);
+    padding-bottom: 3%;
+    margin-bottom: 3%;
+}
+
+.about-me-content> h1{
+    font-size: var(--title-font-size);
+}
+
+.about-me-content-description{
+    margin-top: 3%;
+}

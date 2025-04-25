@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import {
     FaTh,
     FaBars,
@@ -7,8 +8,7 @@ import {
     FaCommentAlt,
     FaShoppingBag,
     FaThList
-}from "react-icons/fa";
-import { NavLink } from 'react-router-dom';
+} from "react-icons/fa";
 
 
 const Sidebar = ({children}) => {
@@ -17,8 +17,13 @@ const Sidebar = ({children}) => {
     const menuItem=[
         {
             path:"/",
-            name:"Work",
+            name:"Home",
             icon:<FaTh/>
+        },
+        {
+            path:"/work",
+            name:"Work",
+            icon:<FaCommentAlt/>
         },
         {
             path:"/contact",
@@ -37,7 +42,7 @@ const Sidebar = ({children}) => {
                </div>
                {
                    menuItem.map((item, index)=>(
-                       <NavLink to={item.path} key={index} className="link" activeclassName="active">
+                       <NavLink to={item.path} key={index} className="link" activeclassname="active">
                            <div className="icon">{item.icon}</div>
                            <div style={{display: isOpen ? "block" : "none"}} className="link_text">{item.name}</div>
                        </NavLink>

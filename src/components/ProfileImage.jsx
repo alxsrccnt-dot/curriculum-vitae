@@ -1,14 +1,17 @@
+import ProfilePicture from "../images/img.jpg";
 import DisplayImage from "./SimpleImage";
-import ProfilePicture from "../images/img.jpg"
 
 function DisplayProfileBlock() {
-    var profilePictureAlt = 'External Image';
+  var profilePictureAlt = 'External Image';
 
-    return (
+  return (
+    <div className="profile-photo">
       <DisplayImage
-       imageUrl={ProfilePicture}
-       imageAlt={profilePictureAlt}/>
-    );
-  }
-  
-  export default DisplayProfileBlock; 
+        imageUrl={ProfilePicture}
+        imageAlt={profilePictureAlt}/>
+        
+    </div>
+  );
+}
+
+export default DisplayProfileBlock; 

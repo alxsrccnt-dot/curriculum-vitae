@@ -11,6 +11,17 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --primary-color: #01faed;
+  --main-color-darker: #4a7729;
+  --main-color-shadow: 0 0 0 0.25rem rgba(53, 162, 61, 0.25);
+  --second-color: #d5ecb4;
+  --gray: #c5c1c1;
+  --white: #fff;
+  --black: #333;
+  --bg-color: white;
+  --title-font-size: 2.5rem;
+  --text-font-size: 0.85rem;
 }
 
 a {
@@ -31,7 +42,6 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
   line-height: 1.1;
 }
 
