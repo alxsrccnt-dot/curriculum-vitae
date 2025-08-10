@@ -4,10 +4,8 @@ import {
     FaTh,
     FaBars,
     FaUserAlt,
-    FaRegChartBar,
     FaCommentAlt,
-    FaShoppingBag,
-    FaThList
+    FaDownload
 } from "react-icons/fa";
 
 
@@ -40,6 +38,7 @@ const Sidebar = ({children}) => {
                        <FaBars onClick={toggle}/>
                    </div>
                </div>
+               <div className='sidebar-items'>
                {
                    menuItem.map((item, index)=>(
                        <NavLink to={item.path} key={index} className="link" activeclassname="active">
@@ -48,6 +47,13 @@ const Sidebar = ({children}) => {
                        </NavLink>
                    ))
                }
+                </div>
+                <div className="bottom_section">
+                   <h1 display="block">Download resume</h1>
+                   <div style={{marginLeft: isOpen ? "50px" : "0px"}} className="bars">
+                       <FaDownload/>
+                   </div>
+               </div>
            </div>
            <main>{children}</main>
         </div>
