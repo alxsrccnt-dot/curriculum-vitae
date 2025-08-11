@@ -31,14 +31,14 @@ const Sidebar = ({children}) => {
     ]
     return (
         <div className="container">
-           <div style={{width: isOpen ? "200px" : "50px"}} className="sidebar">
+           <div style={{width: isOpen ? "200px" : "55px"}} className="sidebar">
                <div className="top_section">
                    <h1 style={{display: isOpen ? "block" : "none"}} className="logo">Logo</h1>
                    <div style={{marginLeft: isOpen ? "50px" : "0px"}} className="bars">
                        <FaBars onClick={toggle}/>
                    </div>
                </div>
-               <div className='sidebar-items'>
+               <div className='sidebar-items' style={{height: isOpen ? 'calc(100% - 150px)' : 'calc(100% - 130px)'}}>
                {
                    menuItem.map((item, index)=>(
                        <NavLink to={item.path} key={index} className="link" activeclassname="active">
@@ -49,10 +49,10 @@ const Sidebar = ({children}) => {
                }
                 </div>
                 <div className="bottom_section">
-                   <h1 display="block">Download resume</h1>
-                   <div style={{marginLeft: isOpen ? "50px" : "0px"}} className="bars">
+                   <div style={{marginRight: isOpen ? "20px" : "0px"}} className="download">
                        <FaDownload/>
                    </div>
+                   <h1 style={{display: isOpen ? "block" : "none"}}>Resume</h1>
                </div>
            </div>
            <main>{children}</main>
