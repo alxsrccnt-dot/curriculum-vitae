@@ -20,10 +20,13 @@ main{
   width: 200px;
   transition: all 0.5s;
 }
+
 .top_section{
   display: flex;
   align-items:center;
   padding:20px 15px;
+  background:lightskyblue;
+  color: #000
 }
 
 .sidebar-items{
@@ -38,6 +41,7 @@ main{
   display: flex;
   align-items:center;
   padding:20px 15px;
+  color: lightskyblue;
 }
 .logo{
   font-size: 30px;
@@ -64,10 +68,11 @@ main{
   color: #000;
   transition: all 0.5s;
 }
+
 .active{
-  background: lightskyblue;
-  color: #000;
+  color: lightskyblue;
 }
+
 .icon, .link_text{
   font-size: 20px;
 }

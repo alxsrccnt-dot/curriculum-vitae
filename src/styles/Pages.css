@@ -45,7 +45,9 @@
     color: var(--primary-color);
     padding: 0 1%;
 }
-
+.short-description > p:first-child{
+    padding-left: 0%;
+}
 .one-service{
     width: 47%;
     margin: 0% 1% 1% 0%;
