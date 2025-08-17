@@ -23,22 +23,21 @@
     display: block;
 }
 
-.profile-img{
+.profile-img {
     width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.my-services{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
 }
 
 .my-services-block > h1{
     font-size: var(--title-font-size);
     margin-bottom: 3%;
-}
-
-.my-services{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-content: center;
 }
 
 .short-description > p{
@@ -48,10 +47,30 @@
 .short-description > p:first-child{
     padding-left: 0%;
 }
-.one-service{
-    width: 47%;
-    margin: 0% 1% 1% 0%;
+
+.name-block > h1{
+    color: #ffffff;
+    font-size: var(--title-font-size);
 }
+
+.name-block > p{
+    color: var(--primary-color);
+    font-size: var(--second-title-font-size);
+}
+
+.one-service{
+    margin: 0% 1% 1% 0%;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.one-service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
 
 .one-service > div{
     display: flex;
@@ -99,4 +118,12 @@
     opacity: 0.5;
     transition: .5s ease;   
     text-align: center;
+}
+
+.social-buttons{
+    font-size: var(--second-title-font-size);
+}
+
+.social-button:hover{
+    color: var(--primary-color);
 }

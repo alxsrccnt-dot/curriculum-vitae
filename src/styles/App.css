@@ -9,8 +9,12 @@
 }
 
 main{
-  width: 100%;
-  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+  gap: 2rem;
 }
 
 .sidebar{
