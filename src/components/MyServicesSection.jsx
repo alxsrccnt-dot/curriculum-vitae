@@ -1,8 +1,11 @@
-import { FirstService } from "../constants/texts";
+import { FaCode, FaCodeBranch, FaComputer, FaFirefoxBrowser, FaServer, FaWebAwesome } from "react-icons/fa6";
+import { FirstService, ForthService, ForthServiceTitle, SecondService, SecondServiceTitle, ThirdService, ThirdServiceTitle } from "../constants/texts";
 import { FirstServiceTitle } from "../constants/texts";
 import {
-    FaBiohazard
+    FaBiohazard,
+    FaDeploydog
 } from "react-icons/fa";
+import { BsBrowserChrome } from "react-icons/bs";
 
 function ServicesTextBlock()
 {
@@ -13,7 +16,7 @@ function ServicesTextBlock()
             <div className="my-services">
                 <section className="one-service">
                     <div>
-                        <FaBiohazard className="my-services-icon"/>
+                        <BsBrowserChrome className="my-services-icon"/>
                         <h1>{FirstServiceTitle}</h1>
                     </div>
                     <p>{FirstService}</p>
@@ -21,26 +24,26 @@ function ServicesTextBlock()
                 
                 <section className="one-service">
                     <div>
-                        <FaBiohazard className="my-services-icon"/>
-                        <h1>{FirstServiceTitle}</h1>
+                        <FaCode className="my-services-icon"/>
+                        <h1>{SecondServiceTitle}</h1>
                     </div>
-                    <p>{FirstService}</p>
+                    <p>{SecondService}</p>
                 </section>
                 
                 <section className="one-service">
                     <div>
-                        <FaBiohazard className="my-services-icon"/>
-                        <h1>{FirstServiceTitle}</h1>
+                        <FaServer className="my-services-icon"/>
+                        <h1>{ThirdServiceTitle}</h1>
                     </div>
-                    <p>{FirstService}</p>
+                    <p>{ThirdService}</p>
                 </section>
                 
                 <section className="one-service">
                     <div>
-                        <FaBiohazard className="my-services-icon"/>
-                        <h1>{FirstServiceTitle}</h1>
+                        <FaCodeBranch className="my-services-icon"/>
+                        <h1>{ForthServiceTitle}</h1>
                     </div>
-                    <p>{FirstService}</p>
+                    <p>{ForthService}</p>
                 </section>
             </div>
         </div>

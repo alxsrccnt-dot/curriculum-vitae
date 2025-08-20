@@ -4,8 +4,6 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  /* color: rgba(255, 255, 255, 0.87);
-  background-color: #242424; */
   background: linear-gradient(135deg, #1e1e1e, #2c2c2c);
   color: #f5f5f5;
 
@@ -19,6 +17,7 @@
   --main-color-shadow: 0 0 0 0.25rem rgba(53, 162, 61, 0.25);
   --second-color: #d5ecb4;
   --gray: #c5c1c1;
+  --gray-black: #1e1e1e;
   --white: #fff;
   --black: #333;
   --bg-color: white;
@@ -37,7 +36,6 @@ a:hover {
 }
 
 body {
- flex: 1; /* take all available space */
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
@@ -58,9 +56,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;

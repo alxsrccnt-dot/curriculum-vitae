@@ -6,19 +6,20 @@
 
 .container{
   display:flex;
+  width: 100vw;
 }
 
 main{
   display: flex;
   flex-wrap: wrap;
-  max-width: 1200px;
+  max-width: 1810px;
   margin: auto;
   padding: 2rem;
   gap: 2rem;
 }
 
 .sidebar{
-  background: #000;
+  background: var(--gray-black);
   color: #fff;
   height: 100vh;
   width: 200px;
@@ -69,7 +70,7 @@ main{
 }
 .link:hover{
   background:lightskyblue;
-  color: #000;
+  color: var(--gray-black );
   transition: all 0.5s;
 }
 
