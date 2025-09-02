@@ -1,28 +1,27 @@
-import { FaCode, FaCodeBranch, FaComputer, FaFirefoxBrowser, FaServer, FaWebAwesome } from "react-icons/fa6";
-import { FirstService, ForthService, ForthServiceTitle, SecondService, SecondServiceTitle, ThirdService, ThirdServiceTitle } from "../constants/texts";
-import { FirstServiceTitle } from "../constants/texts";
-import {
-    FaBiohazard,
-    FaDeploydog
-} from "react-icons/fa";
-import { BsBrowserChrome } from "react-icons/bs";
+import { 
+    FirstServiceTitle, FirstService,
+    SecondServiceTitle, SecondService,
+    ThirdServiceTitle, ThirdService,
+    ForthServiceTitle, ForthService
+} from "../constants/texts";
+import { FaCode, FaCodeBranch, FaGlobe, FaServer } from "react-icons/fa6";
 
 function ServicesTextBlock()
 {
     return (
         <div className="my-services-block">
-            <h1>My services</h1>
+            <h1>What I Do Best</h1>
 
-            <div className="my-services">
-                <section className="one-service">
+            <div className="services-colection">
+                <section className="rounded-border one-service">
                     <div>
-                        <BsBrowserChrome className="my-services-icon"/>
+                        <FaGlobe className="my-services-icon"/>
                         <h1>{FirstServiceTitle}</h1>
                     </div>
                     <p>{FirstService}</p>
                 </section>
                 
-                <section className="one-service">
+                <section className="rounded-border one-service">
                     <div>
                         <FaCode className="my-services-icon"/>
                         <h1>{SecondServiceTitle}</h1>
@@ -30,7 +29,7 @@ function ServicesTextBlock()
                     <p>{SecondService}</p>
                 </section>
                 
-                <section className="one-service">
+                <section className="rounded-border one-service">
                     <div>
                         <FaServer className="my-services-icon"/>
                         <h1>{ThirdServiceTitle}</h1>
@@ -38,7 +37,7 @@ function ServicesTextBlock()
                     <p>{ThirdService}</p>
                 </section>
                 
-                <section className="one-service">
+                <section className="rounded-border one-service">
                     <div>
                         <FaCodeBranch className="my-services-icon"/>
                         <h1>{ForthServiceTitle}</h1>

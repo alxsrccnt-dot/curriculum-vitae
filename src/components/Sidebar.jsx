@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import {
-    FaTh,
     FaBars,
     FaUserAlt,
-    FaCommentAlt,
-    FaDownload
+    FaDownload,
+    FaHistory
 } from "react-icons/fa";
+import { FaMessage } from 'react-icons/fa6';
 
 
 const Sidebar = ({children}) => {
@@ -16,17 +16,17 @@ const Sidebar = ({children}) => {
         {
             path:"/",
             name:"Home",
-            icon:<FaTh/>
+            icon:<FaUserAlt/>
         },
         {
             path:"/work",
             name:"Work",
-            icon:<FaCommentAlt/>
+            icon:<FaHistory/>
         },
         {
             path:"/contact",
             name:"Contact",
-            icon:<FaUserAlt/>
+            icon:<FaMessage/>
         }
     ]
     return (

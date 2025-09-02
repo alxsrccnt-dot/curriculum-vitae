@@ -4,17 +4,85 @@
     flex-wrap: nowrap;
     justify-content: space-evenly;
     align-items: center;
-    max-width: 1980px;
-    max-height: 950px;
+    width: 85vw;
+    height: 90vh;
 }
 
-.left-column {
+.half-column {
     max-width: 50%;
 }
 
-.right-column {
-    max-width: 50%;
+.smaller-column {
+    width: 35%;
 }
+
+.bigger-column {
+    width: 60%;
+}
+
+.rounded-border{
+    margin: 0% 1% 1% 0%;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rounded-border:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+/* service collection styles */
+
+.services-colection{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.my-services-block > h1{
+    font-size: var(--title-font-size);
+    margin-bottom: 3%;
+}
+
+.one-service > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2%;
+    height: 50px;
+}
+
+.one-service > h1 {
+    font-weight: bold;
+    font-size: var(--title-font-size);
+}
+
+.one-service{
+    margin: 0% 1% 1% 0%;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.one-service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .profile-photo{
     width: 100%;
@@ -27,17 +95,6 @@
     width: 100%;
     border-radius: 16px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-}
-
-.my-services{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-}
-
-.my-services-block > h1{
-    font-size: var(--title-font-size);
-    margin-bottom: 3%;
 }
 
 .short-description > p{
@@ -58,7 +115,8 @@
     font-size: var(--second-title-font-size);
 }
 
-.one-service{
+
+.job-box{
     margin: 0% 1% 1% 0%;
     background: rgba(255, 255, 255, 0.05);
     padding: 1.5rem;
@@ -66,22 +124,24 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.one-service:hover {
+.job-box:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 20px rgba(0,0,0,0.3);
 }
 
-
-.one-service > div{
+.job-details{
     display: flex;
-    flex-direction: row;
     align-items: center;
-    margin-bottom: 2%;
+    margin: 1vh 0;
 }
 
-.one-service > h1 {
-    font-weight: bold;
-    font-size: var(--title-font-size);
+.job-details >p:nth-child(2){
+    margin: 0 1vw;
+}
+
+.skill-box{
+    margin: 0% 1% 1% 0%;
+    padding: 1.5rem;
 }
 
 .my-services-icon{
@@ -98,12 +158,12 @@
 .about-me-content{
     border-bottom: 1px solid var(--gray);
     padding-bottom: 3vh;
-    margin-bottom: 6vh;
+    margin-bottom: 3vh;
 }
 
 .about-me-content> h1{
     font-size: var(--title-font-size);
-    margin-bottom: 5vh;
+    margin-bottom: 1vh;
 }
 
 .about-me-content-description{

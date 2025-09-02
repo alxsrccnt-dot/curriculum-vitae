@@ -1,9 +1,15 @@
-import React from 'react';
+import JobsList from "../components/JobsList";
+import SkillsList from "../components/SkillsSection";
 
 const Work = () => {
   return (
-    <div>
-        <h1>Work page</h1>
+    <div className='two-columns'>
+      <div className='bigger-column'>
+        <JobsList/>
+      </div>
+      <div className='smaller-column'>
+        <SkillsList/>
+      </div>
     </div>
   );
 }

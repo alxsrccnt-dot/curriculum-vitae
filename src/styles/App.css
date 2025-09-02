@@ -18,20 +18,14 @@ main{
   gap: 2rem;
 }
 
+/* sidebar */
+
 .sidebar{
   background: var(--gray-black);
   color: #fff;
   height: 100vh;
   width: 200px;
   transition: all 0.5s;
-}
-
-.top_section{
-  display: flex;
-  align-items:center;
-  padding:20px 15px;
-  background:lightskyblue;
-  color: #000
 }
 
 .sidebar-items{
@@ -42,25 +36,36 @@ main{
   flex-direction: column;
 }
 
+.top_section{
+  display: flex;
+  align-items:center;
+  padding:20px 15px;
+  color: lightskyblue;
+}
+
 .bottom_section{
   display: flex;
   align-items:center;
   padding:20px 15px;
   color: lightskyblue;
 }
+
 .logo{
   font-size: 30px;
 }
+
 .bars{
   display: flex;
   font-size: 25px;
   margin-left: 50px;
 }
+
 .download{
   display: flex;
   font-size: 25px;
   margin-right : 50px;
 }
+
 .link{
   display: flex;
   color: #fff;
@@ -68,6 +73,7 @@ main{
   gap: 15px;
   transition: all 0.5s;
 }
+
 .link:hover{
   background:lightskyblue;
   color: var(--gray-black );

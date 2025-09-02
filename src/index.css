@@ -16,13 +16,15 @@
   --main-color-darker: #4a7729;
   --main-color-shadow: 0 0 0 0.25rem rgba(53, 162, 61, 0.25);
   --second-color: #d5ecb4;
+
   --gray: #c5c1c1;
   --gray-black: #1e1e1e;
   --white: #fff;
   --black: #333;
   --bg-color: white;
+  
   --title-font-size: 2.5rem;
-  --second-title-font-size: 1.5rem;
+  --section-title-font-size: 1.5rem;
   --text-font-size: 0.85rem;
 }
 
