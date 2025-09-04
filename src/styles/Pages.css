@@ -1,11 +1,78 @@
+:root{
+    --spp-navigation-width: 200px;
+}
+
+/* single page prezentation */
+
+.spp-content {
+    width: 99vw;
+    height: 100%;
+    position: relative;
+}
+
+.spp-navigation{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: var(--spp-navigation-width);
+    height: 100vh;
+}
+
+.spp-navigation .top-section{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    padding:20px 15px;
+    color: lightskyblue;
+}
+
+.spp-navigation .bottom-section{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    padding:20px 15px;
+    color: lightskyblue;
+}
+
+.spp-navigation .navigation-section{
+    height: calc(100% - 130px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.spp-navigation .button{
+    margin-bottom: 10px;
+    width: 170px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spp-navigation .button .icon{
+    margin-right: 10px;
+}
+
+.spp-navigation .icon{
+    margin-right: 10px;
+}
+
+.spp-prezentation{
+    margin-left: var(--spp-navigation-width);
+}
+
+/*common */
+
 .two-columns {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-evenly;
     align-items: center;
-    width: 85vw;
-    height: 90vh;
+    width: 100%;
+    height: 100vh;
 }
 
 .half-column {
@@ -24,7 +91,7 @@
     margin: 0% 1% 1% 0%;
     background: rgba(255, 255, 255, 0.05);
     padding: 1.5rem;
-    border-radius: 12px;
+    border-radius: var(--border-radius);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -46,17 +113,17 @@
     margin-bottom: 3%;
 }
 
+.one-service > h1 {
+    font-weight: bold;
+    font-size: var(--title-font-size);
+}
+
 .one-service > div{
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-bottom: 2%;
     height: 50px;
-}
-
-.one-service > h1 {
-    font-weight: bold;
-    font-size: var(--title-font-size);
 }
 
 .one-service{
@@ -72,37 +139,24 @@
     box-shadow: 0 6px 20px rgba(0,0,0,0.3);
 }
 
+.my-services-icon{
+    font-size: var(--title-font-size);
+    margin-right: 3%;
+    color: var(--primary-color);    
+}
 
-
-
-
-
-
-
-
-
-
-
+/* profile styles */
 
 .profile-photo{
     width: 100%;
     height: auto;
     position: relative;
-    display: block;
 }
 
 .profile-img {
     width: 100%;
     border-radius: 16px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-}
-
-.short-description > p{
-    color: var(--primary-color);
-    padding: 0 1%;
-}
-.short-description > p:first-child{
-    padding-left: 0%;
 }
 
 .name-block > h1{
@@ -113,61 +167,6 @@
 .name-block > p{
     color: var(--primary-color);
     font-size: var(--second-title-font-size);
-}
-
-
-.job-box{
-    margin: 0% 1% 1% 0%;
-    background: rgba(255, 255, 255, 0.05);
-    padding: 1.5rem;
-    border-radius: 12px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.job-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
-}
-
-.job-details{
-    display: flex;
-    align-items: center;
-    margin: 1vh 0;
-}
-
-.job-details >p:nth-child(2){
-    margin: 0 1vw;
-}
-
-.skill-box{
-    margin: 0% 1% 1% 0%;
-    padding: 1.5rem;
-}
-
-.my-services-icon{
-    font-size: var(--title-font-size);
-    margin-right: 3%;
-    color: var(--primary-color);    
-}
-
-.short-description{
-    display: flex;
-    justify-content: flex-start;
-}
-
-.about-me-content{
-    border-bottom: 1px solid var(--gray);
-    padding-bottom: 3vh;
-    margin-bottom: 3vh;
-}
-
-.about-me-content> h1{
-    font-size: var(--title-font-size);
-    margin-bottom: 1vh;
-}
-
-.about-me-content-description{
-    margin-top: 1vh;
 }
 
 .name-block{
@@ -186,3 +185,64 @@
 .social-button:hover{
     color: var(--primary-color);
 }
+
+/* description styles */
+
+.about-me-content{
+    border-bottom: 1px solid var(--gray);
+    padding-bottom: 3vh;
+    margin-bottom: 3vh;
+}
+.about-me-content> h1{
+    font-size: var(--title-font-size);
+    margin-bottom: 1vh;
+}
+
+.about-me-content-description{
+    margin-top: 1vh;
+}
+
+.short-description{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.short-description > p{
+    color: var(--primary-color);
+    padding: 0 1%;
+}
+
+.short-description > p:first-child{
+    padding-left: 0%;
+}
+
+
+/* job collection styles */
+
+.job-box{
+    margin: 2% 0%;
+}
+
+.job-box:hover {
+    transform: translateY(-3px);
+}
+
+.job-details{
+    display: flex;
+    align-items: center;
+    margin: 1vh 0;
+}
+
+.job-details >p:nth-child(2){
+    margin: 0 1vw;
+}
+
+/* skills collection styles */
+
+.skill-box{
+    margin: 0% 1% 1% 0%;
+    padding: 1.5rem;
+}
+
+
+/* contact styles */

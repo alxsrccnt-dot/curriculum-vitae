@@ -12,7 +12,7 @@ const JOBS = [
     description: "Developed scalable server-side logic and APIs for elderly care applications, processing real-time sensor data (temperature, motion, electricity) to detect anomalies, trigger alerts, and support proactive healthcare. Maintained and enhanced legacy platforms, optimized data management with SQL/NoSQL, and implemented CI/CD automation using Azure Pipelines and services. Built robust back-end components in C#/.NET Core following SOLID principles and design patterns. Later contributed to a WPF-based gambling application, designing business logic for prize probability and creating unit tests to ensure fairness and reliability."
   },
   { 
-    period: "29.08.2022 – 13.05.2022",
+    period: "29.08.2021 – 13.05.2022",
     title: "PROGRAMMER (.NET)",
     company: "E-COM Digital SRL",
     description: "Started by developing cross-platform mobile applications with Xamarin and .NET, focusing on scalable, maintainable, and user-friendly solutions. Implemented RESTful API integrations in C# to enable seamless communication between mobile apps (e.g., online store) and SQL databases, using HTTP requests for secure and efficient CRUD operations. Later transitioned to full-stack development with C#, ASP.NET MVC, HTML, CSS, JavaScript, and SQL, building web applications based on the MVC architecture."
