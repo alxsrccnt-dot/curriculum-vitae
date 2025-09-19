@@ -1,6 +1,11 @@
-export const FullName = "Constantin-Alexandru Serediuc"
+export const FullName = "Constantin-Alexandru Serediuc";
 export const ShortName = 'Alex';
+export const JobTitle = 'Software engineer';
+export const MainSkills = '.NET - C# Development, Sql/NoSql, Devops & Azure Services';
+export const Location = 'Romania, Suceava';
+export const Languages = 'Romanian, English';
 export const Moto = 'Turning business needs into efficient software solutions.';
+export const WelcomeMessage = 'Hello and welcome!';
 
 export const FirstServiceTitle = 'Web Application & API Developer';
 export const FirstService = "Experienced in designing and developing web applications and RESTful APIs, ensuring scalability, performance, and maintainability. Skilled in integrating front-end and back-end systems to deliver reliable, efficient solutions.";

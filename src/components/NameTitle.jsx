@@ -7,7 +7,6 @@ function DisplayName()
 {
     return (
         <div className='name-block'>
-
             <h1>{FullName}</h1>
             <p>Software engineer</p>
             <div  className="social-buttons">

@@ -1,12 +1,12 @@
 :root{
-    --spp-navigation-width: 200px;
+    --spp-navigation-width: 250px;
 }
 
 /* single page prezentation */
 
 .spp-content {
     width: 99vw;
-    height: 100%;
+    height: 99%;
     position: relative;
 }
 
@@ -22,7 +22,8 @@
     display: flex;
     align-items:center;
     justify-content: center;
-    padding:20px 15px;
+    padding: 20px 15px;
+    margin-top: 80px;
     color: lightskyblue;
 }
 
@@ -35,7 +36,7 @@
 }
 
 .spp-navigation .navigation-section{
-    height: calc(100% - 130px);
+    height: calc(100% - 558px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,7 +49,7 @@
     height: 50px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    background-color: transparent;
 }
 
 .spp-navigation .button .icon{
@@ -63,6 +64,11 @@
     margin-left: var(--spp-navigation-width);
 }
 
+.spp-prezentation-slider{
+    width: 100vw - var(--spp-navigation-width);
+    margin: 1%;
+}
+
 /*common */
 
 .two-columns {
@@ -73,6 +79,15 @@
     align-items: center;
     width: 100%;
     height: 100vh;
+}
+
+.single-column {
+    margin: 0 auto;
+    width: 80%;
+    height: 97vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .half-column {
@@ -100,12 +115,139 @@
     box-shadow: 0 6px 20px rgba(0,0,0,0.3);
 }
 
+/* Home styles */
+
+#home{
+    background-image: url(../images/bg3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center 0px;
+}
+
+#home.spp-prezentation-slider {
+    margin: 0
+}
+
+#home .two-columns{
+    justify-content: center;
+}
+
+#home .smaller-column{
+    width: 20%;
+}
+
+#home .bigger-column{
+    height: 535px;
+    width: 35%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    border-radius: 0 16px 16px 0;
+    margin-bottom: 8px;
+    background: linear-gradient(135deg, #1e1e1e, #2c2c2c);
+}
+
+#home .profile-img {
+    border-radius: 16px 0 0 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    height: 535px;
+}
+
+#home .about-me-content{
+    padding: 0 0 0 40px;
+    margin: 53px 0;
+    border: 0;
+}
+
+.my-name{
+    font-size: var(--section-title-font-size);
+    display: flex;
+    align-items: center;
+}
+
+#home .my-name h1{
+    font-size: var(--second-title-font-size);
+    font-weight: bold;
+    margin-left: 10px;
+    color: var(--primary-color);
+}
+
+.button.hire-me{
+    display: flex;
+    align-items: center;
+    color: var(--primary-color);
+    margin: -108px 0 0 443px;
+}
+
+.button.hire-me .icon{
+    margin-right: 5px;
+}
+
+.personal-informations{
+    margin-top: 20px;
+}
+
+.about-me-content .welcome-message{
+    border-radius: 30px;
+    background-color: var(--primary-color);
+    color: var(--gray-black);
+    font-size: var(--section-title-font-size);
+    width: 220px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+.about-me-content .welcome-message-tail{
+    height: 10px;
+    width: 0px;
+    border-top: 30px solid var(--primary-color);
+    border-left: 20px solid transparent;
+    border-right: 10px solid transparent;
+    margin: -20px 0px -5px 35px;
+}
+
+.personal-information{
+    display: flex;
+    line-height: 2.4;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.personal-information .icon{
+    margin: 0 10px 0 0;
+    font-size: 25px;
+    color: var(--primary-color);
+    min-width: 25px;
+    text-align: center;
+}
+
+.about-me-content .social-buttons{
+    background-color: var(--primary-color);
+    display: flex;
+    border-radius: 0 0 16px 0;
+    margin: 73px 0 0 -40px;
+    height: 70px;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--gray-black);
+    padding-right: 300px;
+}
+
+.about-me-content .social-buttons .icon{
+    font-size: 25px;
+}
+
+.about-me-content .social-buttons .icon:hover{
+    transition: transform 0.3s ease, font-size 0.3s ease-in-out;
+    font-size: 30px;
+}
+
 /* service collection styles */
 
 .services-colection{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
     gap: 1.5rem;
+    flex-direction: row;
+    align-items: center;
 }
 
 .my-services-block > h1{

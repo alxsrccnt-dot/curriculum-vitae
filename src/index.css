@@ -18,14 +18,15 @@
   --second-color: #d5ecb4;
 
   --gray: #c5c1c1;
-  --gray-black: #1e1e1e;
+  --gray-black: #2c2c2c;
   --white: #fff;
   --black: #333;
   --bg-color: white;
   
   --title-font-size: 2.5rem;
+  --second-title-font-size: 2rem;
   --section-title-font-size: 1.5rem;
-  --text-font-size: 0.85rem;
+  --text-font-size: 1rem;
 
   --border-radius: 12px;
 }
