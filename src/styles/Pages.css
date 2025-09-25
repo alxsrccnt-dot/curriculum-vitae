@@ -1,5 +1,5 @@
 :root{
-    --spp-navigation-width: 250px;
+    --spp-navigation-width: 200px;
 }
 
 /* single page prezentation */
@@ -23,8 +23,8 @@
     align-items:center;
     justify-content: center;
     padding: 20px 15px;
-    margin-top: 80px;
-    color: lightskyblue;
+    margin-top: 10px;
+    color: var(--primary-color);;
 }
 
 .spp-navigation .bottom-section{
@@ -32,11 +32,17 @@
     align-items:center;
     justify-content: center;
     padding:20px 15px;
-    color: lightskyblue;
+    color: var(--primary-color);;
+}
+
+.spp-navigation .bottom-section .button {
+    color: var(--gray-black);
+    background-color: var(--primary-color);
+    font-size: var(--text-font-size);
 }
 
 .spp-navigation .navigation-section{
-    height: calc(100% - 558px);
+    height: calc(100% - 300px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,11 +68,19 @@
 
 .spp-prezentation{
     margin-left: var(--spp-navigation-width);
+    scroll-behavior: smooth;
 }
 
 .spp-prezentation-slider{
     width: 100vw - var(--spp-navigation-width);
-    margin: 1%;
+    height: 100vh;
+}
+
+/* navigation */
+
+.company-logo .profile-img{
+    height: 155px;
+    width: 155px;
 }
 
 /*common */
@@ -83,7 +97,6 @@
 
 .single-column {
     margin: 0 auto;
-    width: 80%;
     height: 97vh;
     display: flex;
     justify-content: center;
@@ -175,7 +188,7 @@
     display: flex;
     align-items: center;
     color: var(--primary-color);
-    margin: -108px 0 0 443px;
+    margin: -108px 0 0 460px;
 }
 
 .button.hire-me .icon{
@@ -251,13 +264,15 @@
 }
 
 .my-services-block > h1{
-    font-size: var(--title-font-size);
-    margin-bottom: 3%;
+    font-size: var(--second-title-font-size);
+    color: var(--primary-color);
+    margin-bottom: 30px;;
 }
 
-.one-service > h1 {
-    font-weight: bold;
+.my-services-icon{
     font-size: var(--title-font-size);
+    margin-right: 15px;
+    color: var(--primary-color);    
 }
 
 .one-service > div{
@@ -265,26 +280,27 @@
     flex-direction: row;
     align-items: center;
     margin-bottom: 2%;
-    height: 50px;
+    height: 65px;
 }
+
+.one-service h1{
+    font-size: var(--section-title-font-size);
+}
+
 
 .one-service{
     margin: 0% 1% 1% 0%;
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--gray-black-800);
     padding: 1.5rem;
     border-radius: 12px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 260px;
+    width: 33%;
 }
 
 .one-service:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 20px rgba(0,0,0,0.3);
-}
-
-.my-services-icon{
-    font-size: var(--title-font-size);
-    margin-right: 3%;
-    color: var(--primary-color);    
 }
 
 /* profile styles */
@@ -330,6 +346,16 @@
 
 /* description styles */
 
+#about .single-column{
+    width: 1320px;
+}
+
+#about .about-me-content h1{
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    font-size: var(--second-title-font-size);
+}
+
 .about-me-content{
     border-bottom: 1px solid var(--gray);
     padding-bottom: 3vh;
@@ -341,7 +367,7 @@
 }
 
 .about-me-content-description{
-    margin-top: 1vh;
+    font-size: var(--text-font-size);
 }
 
 .short-description{
@@ -361,6 +387,24 @@
 
 /* job collection styles */
 
+#history.spp-prezentation-slider{
+    height: 2000px;
+}
+
+#history .two-columns{
+    padding-top: 100px;
+    width: 1400px;
+    margin: 0 auto;
+    align-items: normal;
+    height: 100%;
+}
+
+.job-section > h1{
+    color: var(--primary-color);
+    font-size: var(--second-title-font-size);
+    padding-left: 20px;
+}
+
 .job-box{
     margin: 2% 0%;
 }
@@ -369,22 +413,73 @@
     transform: translateY(-3px);
 }
 
+.job-box h1{
+    color: var(--primary-color);
+}
+
 .job-details{
     display: flex;
     align-items: center;
     margin: 1vh 0;
 }
 
-.job-details >p:nth-child(2){
-    margin: 0 1vw;
+.job-details >p:nth-child(2) {
+    margin: 0 10px 0 7px;
 }
 
 /* skills collection styles */
 
-.skill-box{
-    margin: 0% 1% 1% 0%;
-    padding: 1.5rem;
+#history .skill-section{
+    position: sticky;
+    top: 95px;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--primary-color);
+    padding: 20px;
 }
 
+#history .skill-section > h1{
+    color: var(--primary-color);
+    font-size: var(--second-title-font-size);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#history .bigger-column{
+    width: 55%;
+}
+
+#history .smaller-column{
+    width: 40%;
+}
+
+.skill-box{
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.skill-box:last-of-type{
+    margin-bottom: 0;
+}
+
+.skill-box h1{
+    font-size: var(--section-title-font-size);
+    color: var(--primary-color);
+    padding-bottom: 5px;
+}
+
+.skill-items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.skill-item{
+    display: flex;
+    gap: 0.3rem;
+    background: var(--gray-black);
+    color: var(--primary-color);
+    padding: 0.3rem 0.6rem;
+    border-radius: 6px;
+}
 
 /* contact styles */

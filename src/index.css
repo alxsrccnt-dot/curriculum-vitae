@@ -12,16 +12,68 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --primary-color: #01faed;
-  --main-color-darker: #4a7729;
-  --main-color-shadow: 0 0 0 0.25rem rgba(53, 162, 61, 0.25);
-  --second-color: #d5ecb4;
+
+/*If you want safe and professional → Option 2 (Blue).
+  If you want unique but modern → Option 1 (Teal).
+  If you want friendly and creative → Option 3 (Orange).*/
+  /*1*/
+  /* --main-color: #00bfa6;
+  --main-color-darker: #00897b;
+  --main-color-shadow: 0 0 0 0.25rem rgba(0, 191, 166, 0.25);
+  --second-color: #f1f8f6;
 
   --gray: #c5c1c1;
   --gray-black: #2c2c2c;
-  --white: #fff;
-  --black: #333;
-  --bg-color: white;
+  --gray-black-800: #1c1c1c;
+  --white: #ffffff;
+  --black: #121212; */
+  /*2*/
+  /*
+  --main-color: #3b82f6;
+  --main-color-darker: #1e40af;
+  --main-color-shadow: 0 0 0 0.25rem rgba(59, 130, 246, 0.25);
+  --second-color: #e0f2fe;
+
+  --gray: #d1d5db;
+  --gray-black: #1f2937;
+  --gray-black-800: #111827;
+  --white: #ffffff;
+  --black: #0a0a0a;
+  */
+  /*3*/
+  /*
+  --main-color: #f97316;
+  --main-color-darker: #c2410c;
+  --main-color-shadow: 0 0 0 0.25rem rgba(249, 115, 22, 0.25);
+  --second-color: #fff7ed;
+
+  --gray: #9ca3af;
+  --gray-black: #2d2d2d;
+  --gray-black-800: #171717;
+  --white: #ffffff;
+  --black: #111111;
+  */
+  --blue:#3b82f6;
+  --indigo:#1e40af;
+  --soft-light-blue:#e0f2fe;
+  --teal:#00bfa6;
+  --soft-mint:#f1f8f6;
+  --orange:#f97316;
+  --dark-burnt-orange:#c2410c;
+  --warm-cream:#fff7ed;
+
+  --primary-color: #00bfa6;
+  --main-color: #01faed;
+  --main-color-darker: #4a7729;
+  --main-color-shadow: 0 0 0 0.25rem rgba(53, 162, 61, 0.25);
+  --main-color-shadow: 0 0 0 0.25rem rgba(59, 130, 246, 0.25);
+  --second-color: #d5ecb4;
+
+  --gray: #d1d5db;
+  --gray-black: #1f2937;
+  --gray-black-800: #111827;
+  --white: #ffffff;
+  --black: #0a0a0a;
   
   --title-font-size: 2.5rem;
   --second-title-font-size: 2rem;

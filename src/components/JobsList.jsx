@@ -1,13 +1,14 @@
 import JOBS from "../constants/JobHistory.js";
-
+3
 function JobBox({ job }) {
   return (
     <div className='rounded-border job-box'>
-      <h1>{job.title}</h1>
+      <h1>{job.company}</h1>
       <div className="job-details">
-        <p>{job.company}</p>
-        <p>-</p>
-        <p>{job.period}</p>
+        <p>&#11044;</p><p>Job title:</p><p>{job.title}</p>
+      </div>
+      <div className="job-details">
+        <p>&#11044;</p><p>Period:</p><p>{job.startDate}&#11166;{job.endDate}</p>
       </div>
       <p>{job.description}</p>
     </div>
@@ -25,7 +26,7 @@ function JobsList() {
   });
 
   return (
-    <section>
+    <section className="job-section">
         <h1>Job History</h1>
         {jobs}
     </section>

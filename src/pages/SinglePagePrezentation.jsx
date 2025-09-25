@@ -17,6 +17,7 @@ import {
     FaHistory
 } from "react-icons/fa";
 import { FaFile, FaHandshakeSimple, FaMessage } from 'react-icons/fa6';
+import DisplayCompanyLogoBlock from '../components/CompanyLogo.jsx';
 
 function Presentation() {
   const homeRef = useRef(null);
@@ -28,7 +29,7 @@ function Presentation() {
         <div className='spp-content'>
             <section className='spp-navigation'>
                 <div className="top-section">
-                    <DisplayProfileBlock/>
+                    <DisplayCompanyLogoBlock/>
                 </div>
                 <div className="navigation-section">
                     <button className="button" onClick={() => {
@@ -61,10 +62,17 @@ function Presentation() {
                     </button>
                 </div>
                 <div className="bottom-section">
-                    <div className="icon">
-                        <FaDownload/>
-                    </div>
-                    <h1 >Resume</h1>
+                    <button className="button" onClick={() => {
+                        contactRef.current?.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }}>
+                        <div className="icon">
+                            <FaDownload/>
+                        </div>
+                        <h1 >Resume</h1>
+                    </button>
+                    
                 </div>
             </section>
             <div className='spp-prezentation'>

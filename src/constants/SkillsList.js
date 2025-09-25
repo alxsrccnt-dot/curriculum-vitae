@@ -1,23 +1,96 @@
 const Skills = [
   {
     category: "Programming & Frameworks",
-    items: "C#, .NET Framework, ASP.NET Core, ASP.NET MVC, ASP.NET Web API, Unit/Integration Testing"
+    items:
+    [
+      { 
+        name: "C#"
+      },
+      { 
+        name: ".NET"
+      },
+      { 
+        name: "ASP.NET Core"
+      },
+      { 
+        name: "React"
+      },
+      { 
+        name: "Unit/Integration Testing"
+      }
+    ]
   },
   {
     category: "Databases",
-    items: "Microsoft SQL Server, Azure SQL Server, SQL, NoSQL"
+    items:
+    [
+      { 
+        name: "Microsoft SQL Server"
+      },
+      { 
+        name: "SQL"
+      },
+      { 
+        name: "NoSQL"
+      }
+    ]
   },
   { 
     category: "Cloud & DevOps",
-    items: "Microsoft Azure, Azure Services, Azure DevOps, DevOps Pipelines, CI/CD"
+    items:
+    [
+      { 
+        name: "Microsoft Azure"
+      },
+      { 
+        name: "Azure Services"
+      },
+      { 
+        name: "Azure DevOps"
+      },
+      { 
+        name: "DevOps Pipelines"
+      },
+      { 
+        name: "CI/CD"
+      }
+    ]
   },
   { 
     category: "Tools & IDEs",
-    items: "Visual Studio Enterprise, Postman, SQL Server management Studio Docker Desktop, Service Bus Explorer"
+    items:
+    [
+      { 
+        name: "Postman"
+      },
+      { 
+        name: "SQL Server management Studio"
+      },
+      { 
+        name: "Docker Desktop"
+      },
+      { 
+        name: "Service Bus Explorer"
+      }
+    ]
   },
   { 
-    category: "CWeb Technologies",
-    items: "Web Technologies (HTML, CSS, JavaScript), MVC "
+    category: "Web Technologies",
+    items:
+    [
+      { 
+        name: "HTML"
+      },
+      { 
+        name: "CSS"
+      },
+      { 
+        name: "JavaScript"
+      },
+      { 
+        name: "React"
+      }
+    ]
   }
 ]
 
