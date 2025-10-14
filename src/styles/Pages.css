@@ -16,6 +16,7 @@
     top: 0;
     width: var(--spp-navigation-width);
     height: 100vh;
+    border-right: 2px solid var(--color-gray-700);
 }
 
 .spp-navigation .top-section{
@@ -24,7 +25,7 @@
     justify-content: center;
     padding: 20px 15px;
     margin-top: 10px;
-    color: var(--primary-color);;
+    color: var(--main-color);;
 }
 
 .spp-navigation .bottom-section{
@@ -32,13 +33,13 @@
     align-items:center;
     justify-content: center;
     padding:20px 15px;
-    color: var(--primary-color);;
+    color: var(--main-color);
 }
 
 .spp-navigation .bottom-section .button {
     color: var(--gray-black);
-    background-color: var(--primary-color);
-    font-size: var(--text-font-size);
+    background-color: var(--main-color);
+    font-size: var(--text-font-size) !important;
 }
 
 .spp-navigation .navigation-section{
@@ -74,6 +75,27 @@
 .spp-prezentation-slider{
     width: 100vw - var(--spp-navigation-width);
     height: 100vh;
+}
+
+.small-colored-squere{
+    height: 10px;
+    width: 140px;
+    border-top: 5px solid var(--main-color);
+    border-left: 0px solid transparent;
+    border-right: 0px solid transparent;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.vertical-colored-line{
+    height: 0px;
+    width: 5px;
+    border-top: 210px solid var(--main-color);
+    border-left: 0px solid transparent;
+    border-right: 0px solid transparent;
+    text-align: center;
+    border-radius: var(--border-radius);
+    margin-top: 20px;
 }
 
 /* navigation */
@@ -147,7 +169,7 @@
 }
 
 #home .smaller-column{
-    width: 20%;
+    width: 350px;
 }
 
 #home .bigger-column{
@@ -163,6 +185,7 @@
     border-radius: 16px 0 0 16px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
     height: 535px;
+    width: 350px;
 }
 
 #home .about-me-content{
@@ -181,14 +204,14 @@
     font-size: var(--second-title-font-size);
     font-weight: bold;
     margin-left: 10px;
-    color: var(--primary-color);
+    color: var(--main-color);
 }
 
 .button.hire-me{
     display: flex;
     align-items: center;
-    color: var(--primary-color);
-    margin: -108px 0 0 460px;
+    color: var(--main-color);
+    margin: -111px 0 0 40px
 }
 
 .button.hire-me .icon{
@@ -199,9 +222,26 @@
     margin-top: 20px;
 }
 
+/* about content */
+
+#about .two-columns{
+    max-width: 80%;
+    margin: 0 auto;
+
+}
+
+#about .smaller-column{
+    width: 35%;
+    margin-left: 20px;
+}
+
+#about .bigger-column{
+    width: 65%;
+}
+
 .about-me-content .welcome-message{
     border-radius: 30px;
-    background-color: var(--primary-color);
+    background-color: var(--main-color);
     color: var(--gray-black);
     font-size: var(--section-title-font-size);
     width: 220px;
@@ -212,7 +252,7 @@
 .about-me-content .welcome-message-tail{
     height: 10px;
     width: 0px;
-    border-top: 30px solid var(--primary-color);
+    border-top: 30px solid var(--main-color);
     border-left: 20px solid transparent;
     border-right: 10px solid transparent;
     margin: -20px 0px -5px 35px;
@@ -228,21 +268,22 @@
 .personal-information .icon{
     margin: 0 10px 0 0;
     font-size: 25px;
-    color: var(--primary-color);
+    color: var(--main-color);
     min-width: 25px;
     text-align: center;
 }
 
 .about-me-content .social-buttons{
-    background-color: var(--primary-color);
+    background-color: var(--main-color);
     display: flex;
     border-radius: 0 0 16px 0;
     margin: 73px 0 0 -40px;
     height: 70px;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-end;
     color: var(--gray-black);
-    padding-right: 300px;
+    padding-right: 20px;
+    gap: 15px;
 }
 
 .about-me-content .social-buttons .icon{
@@ -257,22 +298,29 @@
 /* service collection styles */
 
 .services-colection{
-    display: flex;
-    gap: 1.5rem;
-    flex-direction: row;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px
 }
 
-.my-services-block > h1{
+#about .my-services-block > h2{
     font-size: var(--second-title-font-size);
-    color: var(--primary-color);
-    margin-bottom: 30px;;
+    color: var(--main-color);
+    margin-bottom: 20px;;
 }
 
 .my-services-icon{
     font-size: var(--title-font-size);
     margin-right: 15px;
-    color: var(--primary-color);    
+    color: var(--main-color);    
+}
+
+.one-service{
+    margin: 0% 1% 1% 0%;
+    background: var(--gray-black-800);
+    padding: 1.5rem;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .one-service > div{
@@ -287,15 +335,8 @@
     font-size: var(--section-title-font-size);
 }
 
-
-.one-service{
-    margin: 0% 1% 1% 0%;
-    background: var(--gray-black-800);
-    padding: 1.5rem;
-    border-radius: 12px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: 260px;
-    width: 33%;
+.one-service p{
+        font-size: var(--text-sm);
 }
 
 .one-service:hover {
@@ -323,7 +364,7 @@
 }
 
 .name-block > p{
-    color: var(--primary-color);
+    color: var(--main-color);
     font-size: var(--second-title-font-size);
 }
 
@@ -341,7 +382,7 @@
 }
 
 .social-button:hover{
-    color: var(--primary-color);
+    color: var(--main-color);
 }
 
 /* description styles */
@@ -351,15 +392,13 @@
 }
 
 #about .about-me-content h1{
-    color: var(--primary-color);
-    margin-bottom: 30px;
+    color: var(--main-color);
+    margin-bottom: 20px;
     font-size: var(--second-title-font-size);
 }
 
 .about-me-content{
-    border-bottom: 1px solid var(--gray);
-    padding-bottom: 3vh;
-    margin-bottom: 3vh;
+    margin-bottom: 2vh;
 }
 .about-me-content> h1{
     font-size: var(--title-font-size);
@@ -376,7 +415,7 @@
 }
 
 .short-description > p{
-    color: var(--primary-color);
+    color: var(--main-color);
     padding: 0 1%;
 }
 
@@ -384,64 +423,28 @@
     padding-left: 0%;
 }
 
+#about .skill-section h2{
+    color: var(--main-color);
+    margin-bottom: 20px;
+    font-size: var(--second-title-font-size);
+}
+
+#about .skill-box h2{
+    color: var(--white);
+    margin-bottom: 10px;
+}
 
 /* job collection styles */
 
 #history.spp-prezentation-slider{
-    height: 2000px;
+    padding-top: calc((100vh - 3*293px - 70px)/2);
 }
 
 #history .two-columns{
-    padding-top: 100px;
-    width: 1400px;
+    width: 60%;
     margin: 0 auto;
     align-items: normal;
-    height: 100%;
-}
-
-.job-section > h1{
-    color: var(--primary-color);
-    font-size: var(--second-title-font-size);
-    padding-left: 20px;
-}
-
-.job-box{
-    margin: 2% 0%;
-}
-
-.job-box:hover {
-    transform: translateY(-3px);
-}
-
-.job-box h1{
-    color: var(--primary-color);
-}
-
-.job-details{
-    display: flex;
-    align-items: center;
-    margin: 1vh 0;
-}
-
-.job-details >p:nth-child(2) {
-    margin: 0 10px 0 7px;
-}
-
-/* skills collection styles */
-
-#history .skill-section{
-    position: sticky;
-    top: 95px;
-    border-radius: var(--border-radius);
-    border: 1px solid var(--primary-color);
-    padding: 20px;
-}
-
-#history .skill-section > h1{
-    color: var(--primary-color);
-    font-size: var(--second-title-font-size);
-    margin-bottom: 20px;
-    text-align: center;
+    height: auto;
 }
 
 #history .bigger-column{
@@ -450,11 +453,89 @@
 
 #history .smaller-column{
     width: 40%;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.job-section{
+    display: flex;
+    gap: 35px;
+    flex-direction: column;
+}
+
+.job-section > h1{
+    color: var(--main-color);
+    font-size: var(--second-title-font-size);
+    padding-left: 20px;
+}
+
+.job-box{
+    margin-bottom: 25px;
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    gap: 12px;
+}
+
+.job-box h1{
+    color: var(--main-color);
+    font-size: var(--section-title-font-size);
+    gap: 12px;
+}
+
+.job-details{
+    background-color: var(--gray-black-800);
+    padding: 15px;
+    border-radius: var(--border-radius);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.job-details .job-peroid{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.job-details .icon{
+    color: var(--main-color);
+    background-color: var(--main-color-darker);
+    font-size: 25px;
+    padding: 10px;
+    border-radius: var(--border-radius);
+}
+
+/* .job-details >p:nth-child(2) {
+    margin: 0 10px 0 7px;
+} */
+
+.job-box p{
+    font-size: var(--text-sm);
+}
+
+/* skills collection styles */
+
+#history .skill-section{
+    position: sticky;
+    top: 95px;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--main-color);
+    padding: 20px;
+}
+
+#history .skill-section > h1{
+    color: var(--main-color);
+    font-size: var(--second-title-font-size);
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .skill-box{
     padding: 15px;
     margin-bottom: 15px;
+    background: var(--gray-black-800);
 }
 
 .skill-box:last-of-type{
@@ -463,7 +544,7 @@
 
 .skill-box h1{
     font-size: var(--section-title-font-size);
-    color: var(--primary-color);
+    color: var(--main-color);
     padding-bottom: 5px;
 }
 
@@ -474,12 +555,123 @@
 }
 
 .skill-item{
+    font-size: var(--text-sm);
     display: flex;
     gap: 0.3rem;
     background: var(--gray-black);
-    color: var(--primary-color);
     padding: 0.3rem 0.6rem;
     border-radius: 6px;
 }
 
 /* contact styles */
+
+#contact .single-column{
+    width: 1000px;
+}
+
+#contact .two-columns{
+    height: 600px;
+    display: flex;
+}
+
+#contact .bigger-column{
+    width: 45%;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    background-color: var(--gray-black-800);
+    padding: 30px;
+    border-radius: var(--border-radius);
+}
+
+#contact .smaller-column{
+    width: 45%;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    padding: 30px;
+}
+
+#contact h1{
+    font-size: var(--text-5xl);
+    line-height: var(--tw-leading, var(--text-5xl--line-height));
+    color: var(--white);
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#contact .moto{
+    text-align: center;
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+}
+
+#contact .bigger-column h2{
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+}
+
+#contact .bigger-column p{
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+}
+
+#contact .hire-me-contact-details{
+    background-color: var(--gray-black-800);
+    padding: 15px;
+    border-radius: var(--border-radius);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#contact .hire-me-contact-details .icon{
+    color: var(--main-color);
+    background-color: var(--main-color-darker);
+    font-size: 25px;
+    padding: 10px;
+    border-radius: var(--border-radius);
+}
+
+#contact .contact-name{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+#contact .contact-name-informations{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+#contact .contact-name input{
+    width: 100%;
+}
+
+#contact input{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--second-color);
+    background-color: color-mix(in oklab, var(--input) 30%, transparent);
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+    color: var(--color-gray-300);
+    transition-property: color, box-shadow;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+}
+
+#contact input.content{
+    height: 60px;
+}
+
+#contact .send-mail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    background-color: var(--main-color);
+    color: var(--white);
+}

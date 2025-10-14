@@ -10,16 +10,17 @@ function ServicesTextBlock()
 {
     return (
         <div className="my-services-block">
-            <h1>What I Do Best</h1>
+            <h2>What I Do Best</h2>
 
             <div className="services-colection">
                 <section className="rounded-border one-service">
                     <div>
                         <FaGlobe className="my-services-icon"/>
-                        <h1>{FirstServiceTitle}</h1>
+                        <h2>{FirstServiceTitle}</h2>
                     </div>
                     <p>{FirstService}</p>
                 </section>
+
                 
                 <section className="rounded-border one-service">
                     <div>

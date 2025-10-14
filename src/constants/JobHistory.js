@@ -19,13 +19,6 @@ const JOBS = [
     title: "PROGRAMMER (.NET)",
     company: "E-COM Digital SRL",
     description: "Started by developing cross-platform mobile applications with Xamarin and .NET, focusing on scalable, maintainable, and user-friendly solutions. Implemented RESTful API integrations in C# to enable seamless communication between mobile apps (e.g., online store) and SQL databases, using HTTP requests for secure and efficient CRUD operations. Later transitioned to full-stack development with C#, ASP.NET MVC, HTML, CSS, JavaScript, and SQL, building web applications based on the MVC architecture."
-  },
-  { 
-    startDate: "29.08.2021",
-    endDate: "13.05.2022",
-    title: "PROGRAMMER (.NET)",
-    company: "E-COM Digital SRL",
-    description: "Started by developing cross-platform mobile applications with Xamarin and .NET, focusing on scalable, maintainable, and user-friendly solutions. Implemented RESTful API integrations in C# to enable seamless communication between mobile apps (e.g., online store) and SQL databases, using HTTP requests for secure and efficient CRUD operations. Later transitioned to full-stack development with C#, ASP.NET MVC, HTML, CSS, JavaScript, and SQL, building web applications based on the MVC architecture."
   }
 ]
 

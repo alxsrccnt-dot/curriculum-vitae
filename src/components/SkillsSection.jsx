@@ -2,10 +2,7 @@ import Skills from "../constants/SkillsList.js";
 
 function SkillItem({ item }) {
   return (
-    <div className="skill-item">
-      &#9830;
-      <p>{item}</p>
-    </div>
+    <p className="skill-item">{item}</p>
   );
 }
 
@@ -21,7 +18,7 @@ function SkillBox({ skill }) {
 
   return (
     <div className="rounded-border skill-box">
-      <h1>{skill.category}</h1>
+      <h2>{skill.category}</h2>
       <div className="skill-items">{items}</div>
     </div>
   );
@@ -39,7 +36,7 @@ function SkillsList() {
 
   return (
     <section className="skill-section">
-      <h1>Skills</h1>
+      <h2>Skills learned</h2>
       {skills}
     </section>
   );

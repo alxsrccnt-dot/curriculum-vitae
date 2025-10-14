@@ -4,32 +4,96 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  background: linear-gradient(135deg, #1e1e1e, #2c2c2c);
+  background-color: color-mix(in srgb, oklch(.21 .034 264.665) 50%, transparent);
   color: #f5f5f5;
+
+  --color-orange-400: oklch(.75 .183 55.934);
+  --color-orange-600: oklch(.646 .222 41.116);
+  --color-yellow-400: oklch(.852 .199 91.936);
+  --color-yellow-600: oklch(.681 .162 75.834);
+  --color-green-400: oklch(.792 .209 151.711);
+  --color-green-500: oklch(.723 .219 149.579);
+  --color-green-600: oklch(.627 .194 149.214);
+  --color-green-700: oklch(.527 .154 150.069);
+  --color-green-800: oklch(.448 .119 151.328);
+  --color-emerald-400: oklch(.765 .177 163.223);
+  --color-emerald-500: oklch(.696 .17 162.48);
+  --color-emerald-600: oklch(.596 .145 163.225);
+  --color-cyan-400: oklch(.789 .154 211.53);
+  --color-cyan-600: oklch(.609 .126 221.723);
+  --color-blue-400: oklch(.707 .165 254.624);
+  --color-blue-500: oklch(.623 .214 259.815);
+  --color-blue-600: oklch(.546 .245 262.881);
+  --color-blue-700: oklch(.488 .243 264.376);
+  --color-blue-800: oklch(.424 .199 265.638);
+  --color-indigo-400: oklch(.673 .182 276.935);
+  --color-indigo-600: oklch(.511 .262 276.966);
+  --color-purple-400: oklch(.714 .203 305.504);
+  --color-pink-400: oklch(.718 .202 349.761);
+  --color-pink-600: oklch(.592 .249 .584);
+  --color-gray-100: oklch(.967 .003 264.542);
+  --color-gray-300: oklch(.872 .01 258.338);
+  --color-gray-400: oklch(.707 .022 261.325);
+  --color-gray-500: oklch(.551 .027 264.364);
+  --color-gray-600: oklch(.446 .03 256.802);
+  --color-gray-700: oklch(.373 .034 259.733);
+  --color-gray-800: oklab(0% 0 0 / 0.302);
+  --color-gray-900: oklch(.21 .034 264.665);
+  --color-black: oklab(0% 0 0);
+  --color-white: #fff;
+  --spacing: .25rem;
+  --container-2xl: 42rem;
+  --container-7xl: 80rem;
+  --text-xs: .75rem;
+  --text-xs--line-height: calc(1 / .75);
+  --text-sm: .875rem;
+  --text-sm--line-height: calc(1.25 / .875);
+  --text-base: 1rem;
+  --text-base--line-height: calc(1.5 / 1);
+  --text-lg: 1.125rem;
+  --text-lg--line-height: calc(1.75 / 1.125);
+  --text-xl: 1.25rem;
+  --text-xl--line-height: calc(1.75 / 1.25);
+  --text-2xl: 1.5rem;
+  --text-2xl--line-height: calc(2 / 1.5);
+  --text-4xl: 2.25rem;
+  --text-4xl--line-height: calc(2.5 / 2.25);
+  --text-5xl: 3rem;
+  --text-5xl--line-height: 1;
+  --text-7xl: 4.5rem;
+  --text-7xl--line-height: 1;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --tracking-wider: .05em;
+  --leading-relaxed: 1.625;
+  --animate-pulse: pulse 2s cubic-bezier(.4, 0, .6, 1) infinite;
+  --blur-sm: 8px;
+  --blur-md: 12px;
+  --default-transition-duration: .15s;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-
 /*If you want safe and professional → Option 2 (Blue).
   If you want unique but modern → Option 1 (Teal).
   If you want friendly and creative → Option 3 (Orange).*/
   /*1*/
-  /* --main-color: #00bfa6;
+  --main-color: #00bfa6;
   --main-color-darker: #00897b;
   --main-color-shadow: 0 0 0 0.25rem rgba(0, 191, 166, 0.25);
   --second-color: #f1f8f6;
 
-  --gray: #c5c1c1;
-  --gray-black: #2c2c2c;
-  --gray-black-800: #1c1c1c;
+  --gray: #d1d5db;
+  --gray-black: #1f2937;
+  --gray-black-800: #111827;
+  --gray-black-900: #1c1c1c;
   --white: #ffffff;
-  --black: #121212; */
+  --black: #0a0a0a;
+  
   /*2*/
-  /*
-  --main-color: #3b82f6;
+  /* --main-color: #3b82f6;
   --main-color-darker: #1e40af;
   --main-color-shadow: 0 0 0 0.25rem rgba(59, 130, 246, 0.25);
   --second-color: #e0f2fe;
@@ -37,12 +101,12 @@
   --gray: #d1d5db;
   --gray-black: #1f2937;
   --gray-black-800: #111827;
+  --gray-black-900: #1c1c1c;
   --white: #ffffff;
-  --black: #0a0a0a;
-  */
+  --black: #0a0a0a; */
+  
   /*3*/
-  /*
-  --main-color: #f97316;
+  /* --main-color: #f97316;
   --main-color-darker: #c2410c;
   --main-color-shadow: 0 0 0 0.25rem rgba(249, 115, 22, 0.25);
   --second-color: #fff7ed;
@@ -51,8 +115,8 @@
   --gray-black: #2d2d2d;
   --gray-black-800: #171717;
   --white: #ffffff;
-  --black: #111111;
-  */
+  --black: #111111; */
+
   --blue:#3b82f6;
   --indigo:#1e40af;
   --soft-light-blue:#e0f2fe;
@@ -62,25 +126,36 @@
   --dark-burnt-orange:#c2410c;
   --warm-cream:#fff7ed;
 
-  --primary-color: #00bfa6;
-  --main-color: #01faed;
+  /* --main-color: #01faed;
   --main-color-darker: #4a7729;
   --main-color-shadow: 0 0 0 0.25rem rgba(53, 162, 61, 0.25);
   --main-color-shadow: 0 0 0 0.25rem rgba(59, 130, 246, 0.25);
   --second-color: #d5ecb4;
 
-  --gray: #d1d5db;
-  --gray-black: #1f2937;
-  --gray-black-800: #111827;
-  --white: #ffffff;
-  --black: #0a0a0a;
-  
+ --gray: #c5c1c1;
+ --gray-black: #2c2c2c;
+ --gray-black-800: #ffffff0d;
+ --white: #fff;
+ --black: #333; */
+
   --title-font-size: 2.5rem;
   --second-title-font-size: 2rem;
   --section-title-font-size: 1.5rem;
-  --text-font-size: 1rem;
+  --text-font-size: 13px;
 
   --border-radius: 12px;
+}
+
+.bg-black {
+    background-color: var(--color-black);
+}
+
+.bg-gray-900 {
+    background-color: var(--color-gray-900);
+}
+
+.bg-gray-900\/50 {
+    background-color: color-mix(in srgb, oklch(.21 .034 264.665) 50%, transparent);
 }
 
 a {
@@ -133,7 +208,7 @@ button:focus-visible {
   a:hover {
     color: #747bff;
   }
-  
+
   button {
     background-color: #f9f9f9;
   }

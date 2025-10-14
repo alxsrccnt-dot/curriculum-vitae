@@ -14,7 +14,7 @@ import DisplayPersonalDetailsSection from '../components/PersonalDetailsSection.
 import {
     FaUserAlt,
     FaDownload,
-    FaHistory
+    FaSuitcase,
 } from "react-icons/fa";
 import { FaFile, FaHandshakeSimple, FaMessage } from 'react-icons/fa6';
 import DisplayCompanyLogoBlock from '../components/CompanyLogo.jsx';
@@ -26,7 +26,7 @@ function Presentation() {
   const contactRef = useRef(null);
 
     return (
-        <div className='spp-content'>
+        <div className='spp-content bg-gray-900\/50'>
             <section className='spp-navigation'>
                 <div className="top-section">
                     <DisplayCompanyLogoBlock/>
@@ -51,7 +51,7 @@ function Presentation() {
                             behavior: 'smooth'
                         });
                     }}>
-                       <FaHistory className='icon'/> History
+                       <FaSuitcase className='icon'/> Experience
                     </button>
                     <button className="button" onClick={() => {
                         contactRef.current?.scrollIntoView({
@@ -91,26 +91,23 @@ function Presentation() {
                         </div>
                     </div>
                 </section>
-                <section ref={aboutRef} id="about" className='spp-prezentation-slider'>
-                    <div className='single-column'>
-                        <DisplayAboutMeSection/>
-                        <DisplayServicesTextBlock/>
-                    </div>
-                </section>
-                <section ref={historyRef} id="history" className='spp-prezentation-slider'>
+                <section ref={aboutRef} id="about" className='spp-prezentation-slider bg-black'>
                     <div className='two-columns'>
                         <div className='bigger-column'>
-                            <JobsList/>
+                            <DisplayAboutMeSection/>
+                            <div className='small-colored-squere'/>
+                            <DisplayServicesTextBlock/>
                         </div>
                         <div className='smaller-column'>
                             <SkillsList/>
                         </div>
-                    </div>  
-                </section>
-                <section ref={contactRef} id="contact" className='spp-prezentation-slider'>
-                    <div className='single-column'>
-                        <HireMe/>
                     </div>
+                </section>
+                <section ref={historyRef} id="history" className='spp-prezentation-slider'>
+                    <JobsList/>
+                </section>
+                <section ref={contactRef} id="contact" className='spp-prezentation-slider bg-black'>
+                    <HireMe/>
                 </section>
             </div>
         </div> 
