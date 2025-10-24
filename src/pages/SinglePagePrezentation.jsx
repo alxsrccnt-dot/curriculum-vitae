@@ -81,8 +81,8 @@ function Presentation() {
                         <div className='smaller-column'>
                             <DisplayProfileBlock/>
                         </div>
-                        <div className='bigger-column'>
-                        <DisplayPersonalDetailsSection/>
+                        <div className='bigger-column bg-dark'>
+                            <DisplayPersonalDetailsSection/>
                             <button className="button hire-me" onClick={() => {
                                 contactRef.current?.scrollIntoView({
                                     behavior: 'smooth'
@@ -91,9 +91,9 @@ function Presentation() {
                         </div>
                     </div>
                 </section>
-                <section ref={aboutRef} id="about" className='spp-prezentation-slider bg-black'>
+                <section ref={aboutRef} id="about" className='spp-prezentation-slider bg-gray'>
                     <div className='two-columns'>
-                        <div className='bigger-column'>
+                        <div className="bigger-column">
                             <DisplayAboutMeSection/>
                             <div className='small-colored-squere'/>
                             <DisplayServicesTextBlock/>
@@ -103,10 +103,10 @@ function Presentation() {
                         </div>
                     </div>
                 </section>
-                <section ref={historyRef} id="history" className='spp-prezentation-slider'>
+                <section ref={historyRef} id="history" className='spp-prezentation-slider bg-darker'>
                     <JobsList/>
                 </section>
-                <section ref={contactRef} id="contact" className='spp-prezentation-slider bg-black'>
+                <section ref={contactRef} id="contact" className='spp-prezentation-slider bg-dark'>
                     <HireMe/>
                 </section>
             </div>

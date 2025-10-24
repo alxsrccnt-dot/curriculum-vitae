@@ -4,13 +4,13 @@ import { FaPerson } from "react-icons/fa6";
 3
 function JobBox({ job }) {
   return (
-    <div className='job-box two-columns'>
+    <div className='job-box two-columns bg-dark'>
       <div className="smaller-column">
-        <h2 className="job-details"><FaBuilding className='icon'/>{job.company}</h2>
-        <div className="job-details">
+        <h2 className="job-details bg-gray"><FaBuilding className='icon'/>{job.company}</h2>
+        <div className="job-details bg-gray">
           <FaPerson  className='icon'/><p>{job.title}</p>
         </div>
-        <div className="job-details">
+        <div className="job-details bg-gray">
           <FaCalendar  className='icon'/>
           <div className="job-peroid"><p>{job.startDate}</p>
           <p>&#11166;</p>

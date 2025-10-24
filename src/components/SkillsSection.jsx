@@ -17,7 +17,7 @@ function SkillBox({ skill }) {
   });
 
   return (
-    <div className="rounded-border skill-box">
+    <div className="rounded-border skill-box bg-dark">
       <h2>{skill.category}</h2>
       <div className="skill-items">{items}</div>
     </div>
@@ -33,7 +33,7 @@ function SkillsList() {
         skill={skill}/>
     );
   });
-
+ 
   return (
     <section className="skill-section">
       <h2>Skills learned</h2>

@@ -8,7 +8,7 @@ function HireMe() {
       <div className='small-colored-squere'/>
       <h2 className='moto'>{Moto}</h2>
       <div className='two-columns'>
-        <div className='bigger-column'>
+        <div className='bigger-column bg-darker'>
           <h2>Send me a message</h2>
           <div className='contact-name-informations'>
             <p>First name</p>

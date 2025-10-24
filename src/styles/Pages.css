@@ -139,7 +139,6 @@
 
 .rounded-border{
     margin: 0% 1% 1% 0%;
-    background: rgba(255, 255, 255, 0.05);
     padding: 1.5rem;
     border-radius: var(--border-radius);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -174,11 +173,10 @@
 
 #home .bigger-column{
     height: 535px;
-    width: 35%;
+    width: 670px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
     border-radius: 0 16px 16px 0;
     margin-bottom: 8px;
-    background: linear-gradient(135deg, #1e1e1e, #2c2c2c);
 }
 
 #home .profile-img {
@@ -216,10 +214,6 @@
 
 .button.hire-me .icon{
     margin-right: 5px;
-}
-
-.personal-informations{
-    margin-top: 20px;
 }
 
 /* about content */
@@ -277,7 +271,7 @@
     background-color: var(--main-color);
     display: flex;
     border-radius: 0 0 16px 0;
-    margin: 73px 0 0 -40px;
+    margin: 60px 0 0 -40px;
     height: 70px;
     align-items: center;
     justify-content: flex-end;
@@ -317,7 +311,6 @@
 
 .one-service{
     margin: 0% 1% 1% 0%;
-    background: var(--gray-black-800);
     padding: 1.5rem;
     border-radius: 12px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -485,7 +478,6 @@
 }
 
 .job-details{
-    background-color: var(--gray-black-800);
     padding: 15px;
     border-radius: var(--border-radius);
     display: flex;
@@ -535,7 +527,6 @@
 .skill-box{
     padding: 15px;
     margin-bottom: 15px;
-    background: var(--gray-black-800);
 }
 
 .skill-box:last-of-type{

@@ -7,6 +7,9 @@
   background-color: color-mix(in srgb, oklch(.21 .034 264.665) 50%, transparent);
   color: #f5f5f5;
 
+
+
+
   --color-orange-400: oklch(.75 .183 55.934);
   --color-orange-600: oklch(.646 .222 41.116);
   --color-yellow-400: oklch(.852 .199 91.936);
@@ -85,37 +88,24 @@
   --main-color-shadow: 0 0 0 0.25rem rgba(0, 191, 166, 0.25);
   --second-color: #f1f8f6;
 
+  --color-cascade: #8AB0A8;
+  --color-mischka : #E2E3E8;
+  --color-bali-hai: #8797AC;
+  --color-limed-spruce: #384247;
+
+  --color-night: hsla(60, 6%, 6%, 1);
+  --color-gunmetal: hsla(211, 26%, 17%, 1);
+  --color-charcoal: hsla(217, 17%, 26%, 1);
+  --color-avocado: hsla(83, 69%, 29%, 1);
+  --color-french-gray: hsla(219, 14%, 81%, 1);
+  --color-antiflash-white: hsla(213, 22%, 92%, 1);
+
   --gray: #d1d5db;
   --gray-black: #1f2937;
   --gray-black-800: #111827;
   --gray-black-900: #1c1c1c;
   --white: #ffffff;
   --black: #0a0a0a;
-  
-  /*2*/
-  /* --main-color: #3b82f6;
-  --main-color-darker: #1e40af;
-  --main-color-shadow: 0 0 0 0.25rem rgba(59, 130, 246, 0.25);
-  --second-color: #e0f2fe;
-
-  --gray: #d1d5db;
-  --gray-black: #1f2937;
-  --gray-black-800: #111827;
-  --gray-black-900: #1c1c1c;
-  --white: #ffffff;
-  --black: #0a0a0a; */
-  
-  /*3*/
-  /* --main-color: #f97316;
-  --main-color-darker: #c2410c;
-  --main-color-shadow: 0 0 0 0.25rem rgba(249, 115, 22, 0.25);
-  --second-color: #fff7ed;
-
-  --gray: #9ca3af;
-  --gray-black: #2d2d2d;
-  --gray-black-800: #171717;
-  --white: #ffffff;
-  --black: #111111; */
 
   --blue:#3b82f6;
   --indigo:#1e40af;
@@ -126,18 +116,6 @@
   --dark-burnt-orange:#c2410c;
   --warm-cream:#fff7ed;
 
-  /* --main-color: #01faed;
-  --main-color-darker: #4a7729;
-  --main-color-shadow: 0 0 0 0.25rem rgba(53, 162, 61, 0.25);
-  --main-color-shadow: 0 0 0 0.25rem rgba(59, 130, 246, 0.25);
-  --second-color: #d5ecb4;
-
- --gray: #c5c1c1;
- --gray-black: #2c2c2c;
- --gray-black-800: #ffffff0d;
- --white: #fff;
- --black: #333; */
-
   --title-font-size: 2.5rem;
   --second-title-font-size: 2rem;
   --section-title-font-size: 1.5rem;
@@ -146,16 +124,24 @@
   --border-radius: 12px;
 }
 
-.bg-black {
-    background-color: var(--color-black);
+.bg-darker {
+  background-color: var(--color-night);
+}
+
+.bg-dark {
+  background-color: var(--color-gunmetal);
+}
+
+.bg-gray {
+  background-color: var(--color-charcoal);
 }
 
 .bg-gray-900 {
-    background-color: var(--color-gray-900);
+  background-color: var(--color-gray-900);
 }
 
 .bg-gray-900\/50 {
-    background-color: color-mix(in srgb, oklch(.21 .034 264.665) 50%, transparent);
+  background-color: color-mix(in srgb, oklch(.21 .034 264.665) 50%, transparent);
 }
 
 a {
