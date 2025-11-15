@@ -1,7 +1,19 @@
-function DisplayName(name)
+import { FullName } from "../constants/texts.js";
+import {
+    FaLinkedin
+} from "react-icons/fa";
+
+function DisplayName()
 {
-    var name = 'Serediuc Constantin-Alexandru';
-    return <h1>{name}</h1>;
+    return (
+        <div className='name-block'>
+            <h1>{FullName}</h1>
+            <p>Software engineer</p>
+            <div  className="social-buttons">
+                <FaLinkedin  className="social-button"/>
+            </div>
+        </div>
+    );
 }
 
 export default DisplayName;
