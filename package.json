@@ -1,6 +1,6 @@
 {
   "name": "curriculum-vitae",
-  "homepage" : "https://alxsrccnt-dot.github.io/curriculum-vitae/",
+  "homepage": "https://alxsrccnt-dot.github.io/curriculum-vitae/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
