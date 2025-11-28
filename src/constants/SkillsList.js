@@ -1,22 +1,25 @@
 const Skills = [
   {
-    category: "Programming & Frameworks",
+    category: "Programming",
     items:
     [
       { 
         name: "C#"
       },
       { 
-        name: ".NET"
-      },
-      { 
-        name: "ASP.NET Core"
+        name: ".NET / .NET Core"
       },
       { 
         name: "React"
       },
       { 
-        name: "Unit/Integration Testing"
+        name: "ASP.NET Core"
+      },
+      { 
+        name: "Entity Framework"
+      },
+      { 
+        name: "LINQ"
       }
     ]
   },
@@ -35,12 +38,27 @@ const Skills = [
       }
     ]
   },
-  { 
-    category: "Cloud & DevOps",
+  {
+    category: "Web & APIs",
     items:
     [
       { 
-        name: "Microsoft Azure"
+        name: "RESTful API Design"
+      },
+      { 
+        name: "Razor Pages"
+      },
+      { 
+        name: "Blazor"
+      }
+    ]
+  },
+  { 
+    category: "Cloud",
+    items:
+    [
+      { 
+        name: "Microsoft Azure App Services"
       },
       { 
         name: "Azure Services"
@@ -71,24 +89,6 @@ const Skills = [
       },
       { 
         name: "Service Bus Explorer"
-      }
-    ]
-  },
-  { 
-    category: "Web Technologies",
-    items:
-    [
-      { 
-        name: "HTML"
-      },
-      { 
-        name: "CSS"
-      },
-      { 
-        name: "JavaScript"
-      },
-      { 
-        name: "React"
       }
     ]
   }

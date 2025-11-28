@@ -192,6 +192,10 @@
     border: 0;
 }
 
+#home .personal-details-section{
+    height: 352px;
+}
+
 .my-name{
     font-size: var(--section-title-font-size);
     display: flex;
@@ -223,6 +227,7 @@
     margin: 0 auto;
 
 }
+
 
 #about .smaller-column{
     width: 35%;
@@ -430,7 +435,8 @@
 /* job collection styles */
 
 #history.spp-prezentation-slider{
-    padding-top: calc((100vh - 3*293px - 70px)/2);
+    height: auto;
+    padding: 50px 0;
 }
 
 #history .two-columns{
@@ -453,7 +459,6 @@
 
 .job-section{
     display: flex;
-    gap: 35px;
     flex-direction: column;
 }
 
@@ -463,12 +468,23 @@
     padding-left: 20px;
 }
 
+.job-box.single-column{
+    height: auto;
+    display: flex;
+    gap: 5px;
+    width: 1000px;
+}
+
 .job-box{
     margin-bottom: 25px;
     padding: 1.5rem;
     border-radius: var(--border-radius);
     box-shadow: 0 6px 20px rgba(0,0,0,0.3);
     gap: 12px;
+}
+
+.job-box:last-of-type{
+    margin-bottom: 0;
 }
 
 .job-box h1{
@@ -483,6 +499,14 @@
     display: flex;
     gap: 10px;
     align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.job-details .right-side{
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .job-details .job-peroid{
@@ -498,6 +522,16 @@
     padding: 10px;
     border-radius: var(--border-radius);
 }
+
+.job-box .technologies-used{
+    margin-top: 15px;;
+}
+
+.job-box .technologies-used span:first-child{
+    margin-right: 15px;
+    font-weight: bold;
+}
+
 
 /* .job-details >p:nth-child(2) {
     margin: 0 10px 0 7px;

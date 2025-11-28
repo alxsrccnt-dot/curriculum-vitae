@@ -1,4 +1,4 @@
-import LogoPicture from "../images/fakesigil.png";
+import LogoPicture from "../images/logo.png";
 import DisplayImage from "./SimpleImage";
 
 function DisplayCompanyLogoBlock() {

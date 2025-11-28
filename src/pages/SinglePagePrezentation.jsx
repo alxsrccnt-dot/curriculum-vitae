@@ -91,7 +91,7 @@ function Presentation() {
                         </div>
                     </div>
                 </section>
-                <section ref={aboutRef} id="about" className='spp-prezentation-slider bg-gray'>
+                <section ref={aboutRef} id="about" className='spp-prezentation-slider bg-dark'>
                     <div className='two-columns'>
                         <div className="bigger-column">
                             <DisplayAboutMeSection/>

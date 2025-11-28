@@ -18,16 +18,18 @@ function DisplayPersonalDetailsSection() {
 
     return (
         <div className="about-me-content">
-            <p className='welcome-message'>{WelcomeMessage}</p>
-            <div className='welcome-message-tail'/>
-            <p className='my-name'>I'm <h1>{FullName}</h1></p>
-            <section className='personal-informations'>
-                <div className='personal-information'><FaBriefcase className='icon'/><p>{JobTitle} with {experienceInYears}+ years</p></div>
-                <div className='personal-information'><FaCode className='icon'/><p>{MainSkills}</p></div>
-                <div className='personal-information'><FaBirthdayCake className='icon'/><p>{ age } years old</p></div>
-                <div className='personal-information'><FaMapLocation className='icon'/><p>Based in {Location}</p></div>
-                <div className='personal-information'><FaGlobe className='icon'/><p>{Languages}</p></div>
-            </section>
+            <div className='personal-details-section'>
+                <p className='welcome-message'>{WelcomeMessage}</p>
+                <div className='welcome-message-tail'/>
+                <p className='my-name'>I'm <h1>{FullName}</h1></p>
+                <section className='personal-informations'>
+                    <div className='personal-information'><FaBriefcase className='icon'/><p>{JobTitle} with {experienceInYears}+ years</p></div>
+                    <div className='personal-information'><FaCode className='icon'/><p>{MainSkills}</p></div>
+                    <div className='personal-information'><FaBirthdayCake className='icon'/><p>{ age } years old</p></div>
+                    <div className='personal-information'><FaMapLocation className='icon'/><p>Based in {Location}</p></div>
+                    <div className='personal-information'><FaGlobe className='icon'/><p>{Languages}</p></div>
+                </section>
+            </div>
             <div className='social-buttons'>
                 <FaLinkedin className='icon'/>
                 <FaFacebook className='icon'/>

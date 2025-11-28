@@ -1,25 +1,43 @@
 import { FaBuilding, FaCalendar } from "react-icons/fa";
 import JOBS from "../constants/JobHistory.js";
 import { FaPerson } from "react-icons/fa6";
-3
+
+
+function JobDescriptionWithLineBreaks({description}) {
+  const jobDescriptionWithLineBreaks = [];
+
+  description.forEach(
+    (item) => {
+    jobDescriptionWithLineBreaks.push(
+      <span className ="job-description-item">
+        {item}
+        <br/>
+      </span>
+    );
+  });
+
+  return jobDescriptionWithLineBreaks;
+}
+
 function JobBox({ job }) {
   return (
-    <div className='job-box two-columns bg-dark'>
-      <div className="smaller-column">
-        <h2 className="job-details bg-gray"><FaBuilding className='icon'/>{job.company}</h2>
-        <div className="job-details bg-gray">
-          <FaPerson  className='icon'/><p>{job.title}</p>
+    <div className='job-box single-column bg-dark'>
+      <div className="job-details bg-gray">
+        <div className="left-side">
+          {job.company} - {job.title}
         </div>
-        <div className="job-details bg-gray">
-          <FaCalendar  className='icon'/>
-          <div className="job-peroid"><p>{job.startDate}</p>
+        <div className="right-side">
+          <p>{job.startDate}</p>
           <p>&#11166;</p>
           <p>{job.endDate}</p>
-          </div>
         </div>
       </div>
-      <div className="vertical-colored-line"></div>
-      <p className="bigger-column">{job.description}</p>
+      <div className="small-colored-squere"></div>
+      <JobDescriptionWithLineBreaks description={job.description}/>
+      <div className="technologies-used">
+        <span>Technologies used:</span>
+        <span>{job.tehnologies}</span>
+      </div>
     </div>
   );
 }

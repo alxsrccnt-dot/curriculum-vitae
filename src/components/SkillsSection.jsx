@@ -17,7 +17,7 @@ function SkillBox({ skill }) {
   });
 
   return (
-    <div className="rounded-border skill-box bg-dark">
+    <div className="rounded-border skill-box bg-gray">
       <h2>{skill.category}</h2>
       <div className="skill-items">{items}</div>
     </div>
