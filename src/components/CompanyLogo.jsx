@@ -1,4 +1,4 @@
-import LogoPicture from "../images/logo.png";
+import LogoPicture from "../images/logo1.png";
 import DisplayImage from "./SimpleImage";
 
 function DisplayCompanyLogoBlock() {

@@ -101,10 +101,12 @@
 /* navigation */
 
 .company-logo .profile-img{
-    height: 155px;
-    width: 155px;
+    height: 125px;
+    width: 125px;
+    border-radius: 0;
+    box-shadow: none;
 }
-
+ 
 /*common */
 
 .two-columns {
